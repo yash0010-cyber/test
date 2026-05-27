@@ -1,0 +1,61 @@
+# House Rental Management System - .gitignore
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Composer dependencies
+/vendor/
+composer.lock
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+storage/logs/*.log
+*.log
+
+# Upload files
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Temp files
+tmp/
+temp/
+*.tmp
+
+# Cache files
+storage/cache/*
+!storage/cache/.gitkeep
+
+# OS files
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node (if using frontend build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# PHP-related
+.phpunit.result.cache
+coverage/
+
+# Database
+*.sql
+!database/schema.sql
+database/backups/*
+
+# Session files
+session/*
